@@ -5,8 +5,7 @@ from .models import ContactModel
 
 # Register your models here.
 class ContactAdmin(admin.ModelAdmin):
-	exclude = ('timestamp', )
-	list_display = ('name', 'email', 'subject', 'message',)
+	list_display = ('name', 'email', 'subject','timestamp' ,'message', )
 	list_filter = ('email', )
 
 
