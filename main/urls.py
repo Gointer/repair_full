@@ -18,9 +18,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.views import defaults as default_views
+from .apps.contact.views import HomePageView, create_contact
 
 
 urlpatterns = [
+    url(r'^$', HomePageView.as_view(), name='home'),
+    url(r'^create_contact/$', create_contact),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

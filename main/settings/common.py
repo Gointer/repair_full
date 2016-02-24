@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = str(ROOT_DIR('staticfiles'))
+STATIC_ROOT = str(ROOT_DIR('main/staticfiles'))
 
 STATICFILES_DIRS = (
     str(APPS_DIR.path('static')),

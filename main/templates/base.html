@@ -1,0 +1,101 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<meta name="author" content="Vitalii Atamanchuk" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Перетяжка мебели в Киеве и области</title>
+
+	<link rel="shortcut icon" href="{% static "images/images.jpg" %}">
+
+	<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.theme.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.carousel.css" %}">
+	<link rel="stylesheet" href="{% static "css/jquery.vegas.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/animate.min.css" %}">
+
+	<link rel="stylesheet" href="{% static "assets/icon-fonts/styles.css" %}"> 
+	<link rel="stylesheet" href="{% static "css/pixed-icons.css" %}"> 
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" href="{% static "css/styles.css" %}">
+	<link rel="stylesheet" href="{% static "css/responsive.css" %}">
+
+	<!-- WEBFONT -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+				<script src="js/html5shiv.js"></script>
+				<script src="js/respond.min.js"></script>
+			<![endif]-->
+
+	<!-- JQUERY -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+	<body>
+
+	{% block header %} 
+		{% include "includes/header.html" %}
+	{% endblock %}
+
+	{% block focus %} 
+		{% include "includes/focus.html" %}
+	{% endblock %}
+
+	{% block aboutus %} 
+		{% include "includes/aboutus.html" %}
+	{% endblock %}
+
+	<section class="purchase-now">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h3 class="white-text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+					При заказе перетяжки мебели Вы получаете 10% скидки на установку французских натяжных потолков!  </h3>
+				</div>
+				<div class="col-md-3 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+					<a href="" class="btn btn-primary custom-button red-btn">Заказать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% block pricingtable %} 
+		{% include "includes/pricingtable.html" %}
+	{% endblock %}
+
+	{% block products %} 
+		{% include "includes/products.html" %}
+	{% endblock %}
+
+	{% block contact_us %} 
+		{% include "includes/contact_us.html" %}
+	{% endblock %}
+
+	{% block footer %} 
+		{% include "includes/footer.html" %}
+	{% endblock %}
+
+
+
+
+
+	<!-- SCRIPTS -->
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<script src="{% static "js/wow.min.js" %}"></script>
+	<script src="{% static "js/jquery.nav.js" %}"></script>
+	<script src="{% static "js/jquery.knob.js" %}"></script>
+	<script src="{% static "js/owl.carousel.min.js" %}"></script>
+	<script src="{% static "js/smoothscroll.js" %}"></script>
+	<script src="{% static "js/jquery.vegas.min.js" %}"></script>
+	<script src="{% static "js/main.js" %}"></script>
+
+
+	</body>
+</html>
